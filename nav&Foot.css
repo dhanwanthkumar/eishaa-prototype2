@@ -182,7 +182,7 @@ body {
 @media screen and (max-width: 1500px) {
   .mySlides > .vid{
     height: 590px;
-    object-fit:contain;
+    object-fit:fill;
   }
   .dropdown-content {
     display: none;
