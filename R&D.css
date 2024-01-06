@@ -74,3 +74,19 @@
     background-color: #5a94ac;
     grid-area: 2 / 3 / 3 / 4;
 }
+
+@media screen and (max-width: 1500px) {
+    .parent {
+        display: grid;
+        color: white;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        margin-top: 80px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+
+}

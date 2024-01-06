@@ -4,7 +4,8 @@ body {
     margin: 0%;
     background-color:#99C2ED;
 }
-/* --------------     ------------ */
+
+/* --------------  loader   ------------ */
 
 .loader {
   position: fixed;
@@ -43,11 +44,151 @@ body {
   }
 }
 
-/* --------------      -----------*/
+/*  -------------- nav bar ---------------  */
+
+.navbar a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  z-index: 2;
+}
+.navbar a:hover{
+  color: black;
+}
+
+.navbar div:hover{
+  background-color: lightskyblue;
+  width:fit-content;
+  background-color:none;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home {
+  right: 450px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.technology {
+  right: 210px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.products{
+  right: 110px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.about{
+  right: 10px;  
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.Services {
+  right: 340px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position:fixed;
+  top: 76px;
+  right: 100px;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  align-items: center;
+  justify-content: left;
+  background-color: lightskyblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:flex;
+  margin:2px ;
+  border-radius: 50px;
+}
+
+.dropdown-content a:hover {
+  background-color:rgb(68, 149, 199)
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+  background: none;
+}
+
+.dropdown:hover .Services {
+  background-color:lightskyblue;
+  color: black;
+}
+
+/* --------------- nav bar ---------------*/
+
+/* -------------- loader     -----------*/
 
 .mySlides > .vid{
-  height: 700px;
+  height: 900px;
   object-fit:fill;
+}
+
+@media screen and (max-width: 1500px) {
+  .mySlides > .vid{
+    height: 590px;
+    object-fit:fill;
+  }
+  .dropdown-content {
+    display: none;
+    position:fixed;
+    top: 70px;
+  }
 }
 
 .mySlides {
@@ -59,8 +200,6 @@ body {
     width: 100%;
     height: auto;
 }
-
-
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
@@ -122,136 +261,24 @@ body {
     height: 5px;
     width: 5px;
   }
-
-  /* -------------------------   nav bar for small screen ----------------------------------- */
-
-    .navbar a{
-      color: white;
-      font-size: 18px;
-      text-decoration: none;
-      z-index: 2;
-    }
-    .navbar a:hover{
-      color: black;
-    }
-    
-    .navbar div:hover{
-      background-color: lightskyblue;
-      width:fit-content;
-      background-color:none;
-      font-size: 16px;
-      text-decoration: none;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  
-    .home {
-      right: 450px;
-      margin-top: 3px;
-      margin-right: 2px;
-      margin-left: 2px;
-      display: flex;
-      position: fixed;
-      top: 2%;
-      padding: 16px;
-      z-index: 2;
-    }
-    
-    .technology {
-      right: 210px;
-      margin-top: 3px;
-      margin-right: 2px;
-      margin-left: 2px;
-      display: flex;
-      position: fixed;
-      top: 2%;
-      padding: 16px;
-      z-index: 2;
-    }
-    
-    .products{
-      right: 110px;
-      margin-top: 3px;
-      margin-right: 2px;
-      margin-left: 2px;
-      display: flex;
-      position: fixed;
-      top: 2%;
-      padding: 16px;
-      z-index: 2;
-    }
-    
-    .about{
-      right: 10px;  
-      margin-top: 3px;
-      margin-right: 2px;
-      margin-left: 2px;
-      display: flex;
-      position: fixed;
-      top: 2%;
-      padding: 16px;
-      z-index: 2;
-    }
-    
-    .Services {
-      right: 340px;
-      margin-top: 3px;
-      margin-right: 2px;
-      margin-left: 2px;
-      display: flex;
-      position: fixed;
-      top: 2%;
-      padding: 16px;
-      border: none;
-      border-radius: 5px;
-      z-index: 2;
-    }
-    
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position:fixed;
-      top: 71px;
-      right: 93px;
-      min-width: 350px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      color: black;
-      align-items: center;
-      justify-content: left;
-      background-color: lightskyblue;
-      padding: 12px 16px;
-      text-decoration: none;
-      display:flex;
-      margin:2px ;
-      border-radius: 50px;
-    }
-    
-    .dropdown-content a:hover {
-      background-color:rgb(68, 149, 199)
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: inline;
-      background: none;
-    }
-    
-    .dropdown:hover .Services {
-      background-color:lightskyblue;
-      color: black;
-    }
-
-/* -------------------------   nav bar for small screen ----------------------------------- */
+}
+/* --------- partners ------*/
+.partner > img{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  width: 100%;
+}
 
 /* ---- footer ----*/
+
+.Foot{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(179, 176, 176);
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 .Foot > p{
   margin: 2px;
@@ -269,159 +296,3 @@ body {
 }
 
 /* ---- footer ----*/
-
-}
-
-  .navbar a{
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    z-index: 2;
-  }
-  .navbar a:hover{
-    color: black;
-  }
-  
-  .navbar div:hover{
-    background-color: lightskyblue;
-    width:fit-content;
-    background-color:none;
-    font-size: 16px;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .home {
-    right: 450px;
-    margin-top: 3px;
-    margin-right: 2px;
-    margin-left: 2px;
-    display: flex;
-    position: fixed;
-    top: 2%;
-    padding: 16px;
-    z-index: 2;
-  }
-  
-  .technology {
-    right: 210px;
-    margin-top: 3px;
-    margin-right: 2px;
-    margin-left: 2px;
-    display: flex;
-    position: fixed;
-    top: 2%;
-    padding: 16px;
-    z-index: 2;
-  }
-  
-  .products{
-    right: 110px;
-    margin-top: 3px;
-    margin-right: 2px;
-    margin-left: 2px;
-    display: flex;
-    position: fixed;
-    top: 2%;
-    padding: 16px;
-    z-index: 2;
-  }
-  
-  .about{
-    right: 10px;  
-    margin-top: 3px;
-    margin-right: 2px;
-    margin-left: 2px;
-    display: flex;
-    position: fixed;
-    top: 2%;
-    padding: 16px;
-    z-index: 2;
-  }
-  
-  .Services {
-    right: 340px;
-    margin-top: 3px;
-    margin-right: 2px;
-    margin-left: 2px;
-    display: flex;
-    position: fixed;
-    top: 2%;
-    padding: 16px;
-    border: none;
-    border-radius: 5px;
-    z-index: 2;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position:fixed;
-    top: 71px;
-    right: 93px;
-    min-width: 350px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    align-items: center;
-    justify-content: left;
-    background-color: lightskyblue;
-    padding: 12px 16px;
-    text-decoration: none;
-    display:flex;
-    margin:2px ;
-    border-radius: 50px;
-  }
-  
-  .dropdown-content a:hover {
-    background-color:rgb(68, 149, 199)
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: inline;
-    background: none;
-  }
-  
-  .dropdown:hover .Services {
-    background-color:lightskyblue;
-    color: black;
-  }
-
-  .partner > img{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    width: 100%;
-  }
-
-  .Foot{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(179, 176, 176);
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .Foot > p{
-    margin: 2px;
-  }
-
-  .Copyright{
-    display: flex;
-    padding: 5px;
-    font-size: 8;
-    margin: 0%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: black;
-  }
